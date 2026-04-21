@@ -1,0 +1,146 @@
+/* Variables de color para mantener consistencia */
+:root {
+    --pink-dark: #D10074;
+    --pink-light: #FCE4EC;
+    --text-gray: #4A4A4A;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cv-container {
+    width: 800px;
+    background-color: var(--white);
+    display: flex;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    min-height: 1000px;
+}
+
+/* --- ESTILOS LATERALES (IZQUIERDA) --- */
+.sidebar {
+    width: 35%;
+    background-color: var(--pink-light);
+    padding: 40px 25px;
+    color: var(--text-gray);
+}
+
+.profile-img-container {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--white);
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+.section-left h3 {
+    color: var(--pink-dark);
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--pink-dark);
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.section-left p, .section-left ul {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.section-left ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-info .label {
+    color: var(--pink-dark);
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.email-text {
+    font-size: 0.75rem !important;
+}
+
+/* --- ESTILOS PRINCIPALES (DERECHA) --- */
+.main-content {
+    width: 65%;
+    padding: 60px 40px;
+}
+
+.first-name {
+    color: var(--pink-dark);
+    font-size: 4rem;
+    margin: 0;
+    line-height: 0.9;
+}
+
+.last-name {
+    color: var(--pink-dark);
+    font-size: 4rem;
+    margin: 0;
+    font-weight: 300;
+    -webkit-text-stroke: 1px var(--pink-dark); /* Simula el efecto de contorno */
+    background: transparent;
+}
+
+.header-line {
+    border: 0;
+    border-top: 2px solid var(--pink-dark);
+    margin: 15px 0 40px;
+}
+
+.section-title {
+    color: var(--pink-dark);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.course-list {
+    list-style: none;
+    padding: 0;
+}
+
+.course-list li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.edu-level {
+    color: var(--pink-dark);
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.institution {
+    font-size: 1rem;
+    margin-top: 5px;
+}
