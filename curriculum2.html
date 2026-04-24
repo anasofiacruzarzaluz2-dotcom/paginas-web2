@@ -6,6 +6,60 @@
     <title>CV Sofia Arzaluz</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ajustes para asegurar visibilidad y tamaño */
+        .cv-container { display: flex; max-width: 900px; margin: auto; }
+        
+        /* FOTO DE PERFIL MÁS PEQUEÑA */
+        .profile-img {
+            width: 120px; /* Tamaño reducido */
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Banderas de idiomas */
+        .flag-icon {
+            width: 25px;
+            height: auto;
+            vertical-align: middle;
+            margin-right: 8px;
+            border: 1px solid #ddd;
+        }
+
+        /* Iconos de habilidades (reemplazan las imágenes grandes) */
+        .skill-icon {
+            font-size: 1.2em;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        /* Logo de Coursera ajustado */
+        .coursera-img {
+            width: 150px; /* Tamaño de logo, no de banner */
+            height: auto;
+            object-fit: contain;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        /* Logo de la escuela */
+        .school-img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            float: right;
+            margin-left: 15px;
+            background: white;
+            padding: 5px;
+            border-radius: 50%;
+        }
+
+        .content-block { overflow: hidden; margin-bottom: 20px; }
+        li { list-style: none; margin-bottom: 8px; display: flex; align-items: center; }
+    </style>
 </head>
 <body>
 
@@ -17,38 +71,30 @@
 
             <section class="section-left"> 
                 <h3>SOBRE MI</h3>
-                <p>Me considero una persona responsable y comprometida en lo que me gusta. Me gusta aprender cosas nuevas y descubrir mas cosas que podrían gustarme para seguir aprendiendo.</p>
-                <p>Soy buena trabajando en equipo o individualmente. Me gusta ayudar a la gente y me gusta que me tomen en cuenta en trabajos o lugares.</p>
+                <p>Me considero una persona responsable y comprometida en lo que me gusta...</p>
             </section>
 
             <section class="section-left">
                 <h3>IDIOMAS</h3>
                 <ul>
-                    <li>Ingles</li>
-                    <li>Frances</li>
+                    <li><img src="https://flagcdn.com/w80/us.png" class="flag-icon"> Inglés</li>
+                    <li><img src="https://flagcdn.com/w80/fr.png" class="flag-icon"> Francés</li>
                 </ul>
             </section>
 
             <section class="section-left">
                 <h3>HABILIDADES</h3>
                 <ul>
-                    <li>Se escuchar a las personas</li>
-                    <li>Socializo con las personas</li>
-                    <li>Se manejar mis emociones</li>
-                    <li>Me se controlar en momentos necesarios</li>
-                    <li>Se regular el estres o mantenerlo</li>
+                    <li><span class="skill-icon">👂</span> Se escuchar a las personas</li>
+                    <li><span class="skill-icon">🧠</span> Manejo de emociones</li>
+                    <li><span class="skill-icon">⚠️</span> Control en momentos críticos</li>
+                    <li><span class="skill-icon">🧘</span> Regulación de estrés</li>
                 </ul>
             </section>
 
             <section class="contact-info">
-                <p class="label">Celular</p>
-                <p>(52) 7293205549</p>
-                
-                <p class="label">Dirección</p>
-                <p>Ixtlahuaca de Rayon</p>
-                
-                <p class="label">E-mail</p>
-                <p class="email-text">anasofiacruzarzaluz2@gmail.com</p>
+                <p class="label">Celular: (52) 7293205549</p>
+                <p class="label">E-mail: anasofiacruzarzaluz2@gmail.com</p>
             </section>
         </aside>
 
@@ -62,11 +108,12 @@
             <section class="right-section">
                 <h2 class="section-title">ACTUALIZACIONES</h2>
                 <div class="content-block">
-                    <p class="subtitle">cursos de coursera</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Coursera-Logo_600x600.svg" alt="Coursera Logo" class="coursera-img">
+                    <p class="subtitle">CURSOS DE COURSERA</p>
                     <ul class="course-list">
-                        <li>*curso de RECURSOS HUMANOS</li>
-                        <li>*Curso de CONCEPTOS Y HERRAMIENTAS PARA LA FISICA UNIVERSITARIA</li>
-                        <li>*Negocios con empresas en america latina</li>
+                        <li>* Recursos Humanos</li>
+                        <li>* Física Universitaria</li>
+                        <li>* Negocios en América Latina</li>
                     </ul>
                 </div>
             </section>
@@ -74,11 +121,10 @@
             <section class="right-section">
                 <h2 class="section-title">HISTORIAL ACADÉMICO</h2>
                 <div class="content-block">
-                    <p class="edu-level">SECUNDARIA</p>
+                    <img src="https://cdn-icons-png.flaticon.com/512/167/167707.png" alt="Icono Escuela" class="school-img">
+                    <p class="edu-level">SECUNDARIA Y PREPARATORIA</p>
                     <p class="institution">INSTITUTO CULTURAL CANADIENSE</p>
-                    
-                    <p class="edu-level">PREPARATORIA</p>
-                    <p class="institution">INSTITUTO CULTURAL CANADIENSE</p>
+                    <p>Ixtlahuaca de Rayón</p>
                 </div>
             </section>
         </main>
