@@ -5,117 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Sofia Arzaluz</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <style>
-        /* Ajustes base */
-        body { background-color: #f4f4f4; margin: 0; padding: 20px; }
-        .cv-container { max-width: 900px; margin: auto; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); font-family: 'Montserrat', sans-serif; }
+        /* Ajustes para asegurar visibilidad y tamaño */
+        .cv-container { display: flex; max-width: 900px; margin: auto; }
         
-        /* FOTO AL INICIO (Arriba de todo) */
-        .top-photo-container {
-            text-align: center;
-            padding-top: 30px;
-            width: 100%;
-        }
+        /* FOTO DE PERFIL MÁS PEQUEÑA */
         .profile-img {
-            width: 110px; /* Tamaño pequeño */
-            height: 110px;
+            width: 120px; /* Tamaño reducido */
+            height: 120px;
             object-fit: cover;
             border-radius: 50%;
-            border: 3px solid #2c3e50;
+            display: block;
+            margin: 0 auto;
         }
 
-        .main-layout { display: flex; }
-        
-        /* Sidebar */
-        .sidebar { width: 35%; background-color: #2c3e50; color: white; padding: 20px; }
-        .section-left h3 { border-bottom: 1px solid #555; padding-bottom: 5px; font-size: 14px; letter-spacing: 1px; }
-        
-        /* Main Content */
-        .main-content { width: 65%; padding: 20px 40px; }
-        
-        /* Iconos */
-        .flag-icon { width: 20px; margin-right: 10px; }
-        .skill-icon { font-size: 1.1em; margin-right: 10px; width: 20px; text-align: center; }
+        /* Banderas de idiomas */
+        .flag-icon {
+            width: 25px;
+            height: auto;
+            vertical-align: middle;
+            margin-right: 8px;
+            border: 1px solid #ddd;
+        }
 
-        /* Coursera Logo */
-        .coursera-img { width: 130px; margin-bottom: 10px; display: block; }
+        /* Iconos de habilidades (reemplazan las imágenes grandes) */
+        .skill-icon {
+            font-size: 1.2em;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
 
-        /* Listas y texto */
-        ul { padding: 0; }
-        li { list-style: none; margin-bottom: 10px; display: flex; align-items: center; font-size: 13px; }
-        .header-line { border: 0; border-top: 3px solid #2c3e50; width: 50px; margin: 10px 0; }
-        h1 { margin: 0; line-height: 1; }
-        .section-title { color: #2c3e50; font-size: 16px; letter-spacing: 2px; margin-top: 30px; border-bottom: 1px solid #eee; }
+        /* Logo de Coursera ajustado */
+        .coursera-img {
+            width: 150px; /* Tamaño de logo, no de banner */
+            height: auto;
+            object-fit: contain;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        /* Logo de la escuela */
+        .school-img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            float: right;
+            margin-left: 15px;
+            background: white;
+            padding: 5px;
+            border-radius: 50%;
+        }
+
+        .content-block { overflow: hidden; margin-bottom: 20px; }
+        li { list-style: none; margin-bottom: 8px; display: flex; align-items: center; }
     </style>
 </head>
 <body>
 
     <div class="cv-container">
-        <div class="top-photo-container">
-            <img src="WhatsApp Image 2026-04-24 at 8.31.41 AM.jpeg" alt="Sofia Arzaluz" class="profile-img">
-        </div>
+        <aside class="sidebar">
+            <div class="profile-img-container">
+                <img src="CV/foto.jpg" alt="Sofia Arzaluz" class="profile-img">
+            </div>
 
-        <div class="main-layout">
-            <aside class="sidebar">
-                <section class="section-left"> 
-                    <h3>SOBRE MI</h3>
-                    <p style="font-size: 12px; line-height: 1.6;">Me considero una persona responsable y comprometida en lo que me gusta...</p>
-                </section>
+            <section class="section-left"> 
+                <h3>SOBRE MI</h3>
+                <p>Me considero una persona responsable y comprometida en lo que me gusta...</p>
+            </section>
 
-                <section class="section-left">
-                    <h3>IDIOMAS</h3>
-                    <ul>
-                        <li><img src="https://flagcdn.com/w80/us.png" class="flag-icon"> Inglés</li>
-                        <li><img src="https://flagcdn.com/w80/fr.png" class="flag-icon"> Francés</li>
+            <section class="section-left">
+                <h3>IDIOMAS</h3>
+                <ul>
+                    <li><img src="https://flagcdn.com/w80/us.png" class="flag-icon"> Inglés</li>
+                    <li><img src="https://flagcdn.com/w80/fr.png" class="flag-icon"> Francés</li>
+                </ul>
+            </section>
+
+            <section class="section-left">
+                <h3>HABILIDADES</h3>
+                <ul>
+                    <li><span class="skill-icon">👂</span> Se escuchar a las personas</li>
+                    <li><span class="skill-icon">🧠</span> Manejo de emociones</li>
+                    <li><span class="skill-icon">⚠️</span> Control en momentos críticos</li>
+                    <li><span class="skill-icon">🧘</span> Regulación de estrés</li>
+                </ul>
+            </section>
+
+            <section class="contact-info">
+                <p class="label">Celular: (52) 7293205549</p>
+                <p class="label">E-mail: anasofiacruzarzaluz2@gmail.com</p>
+            </section>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1 class="first-name">SOFIA</h1>
+                <h1 class="last-name">ARZALUZ</h1>
+                <hr class="header-line">
+            </header>
+
+            <section class="right-section">
+                <h2 class="section-title">ACTUALIZACIONES</h2>
+                <div class="content-block">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Coursera-Logo_600x600.svg" alt="Coursera Logo" class="coursera-img">
+                    <p class="subtitle">CURSOS DE COURSERA</p>
+                    <ul class="course-list">
+                        <li>* Recursos Humanos</li>
+                        <li>* Física Universitaria</li>
+                        <li>* Negocios en América Latina</li>
                     </ul>
-                </section>
+                </div>
+            </section>
 
-                <section class="section-left">
-                    <h3>HABILIDADES</h3>
-                    <ul>
-                        <li><span class="skill-icon">👂</span> Escucha activa</li>
-                        <li><span class="skill-icon">🧠</span> Manejo de emociones</li>
-                        <li><span class="skill-icon">⚠️</span> Control crítico</li>
-                        <li><span class="skill-icon">🧘</span> Regulación de estrés</li>
-                    </ul>
-                </section>
-
-                <section class="contact-info" style="margin-top: 40px; font-size: 11px; opacity: 0.8;">
-                    <p>📞 (52) 7293205549</p>
-                    <p>✉️ anasofiacruzarzaluz2@gmail.com</p>
-                </section>
-            </aside>
-
-            <main class="main-content">
-                <header>
-                    <h1 style="font-weight: 300; color: #34495e;">SOFIA</h1>
-                    <h1 style="font-weight: 700; color: #2c3e50;">ARZALUZ</h1>
-                    <div class="header-line"></div>
-                </header>
-
-                <section>
-                    <h2 class="section-title">ACTUALIZACIONES</h2>
-                    <div class="content-block">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Coursera-Logo_600x600.svg" alt="Coursera" class="coursera-img">
-                        <p style="font-size: 14px; font-weight: bold; margin: 5px 0;">CURSOS DE COURSERA</p>
-                        <ul style="margin-left: 15px;">
-                            <li style="display: list-item; list-style: circle;">Recursos Humanos</li>
-                            <li style="display: list-item; list-style: circle;">Física Universitaria</li>
-                            <li style="display: list-item; list-style: circle;">Negocios en América Latina</li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section style="margin-top: 30px;">
-                    <h2 class="section-title">HISTORIAL ACADÉMICO</h2>
-                    <div class="content-block">
-                        <p style="font-size: 14px; font-weight: bold; margin-bottom: 5px;">SECUNDARIA Y PREPARATORIA</p>
-                        <p style="margin: 0; font-size: 13px;">INSTITUTO CULTURAL CANADIENSE</p>
-                        <p style="margin: 0; font-size: 12px; color: #666;">Ixtlahuaca de Rayón</p>
-                    </div>
-                </section>
-            </main>
-        </div>
+            <section class="right-section">
+                <h2 class="section-title">HISTORIAL ACADÉMICO</h2>
+                <div class="content-block">
+                    <img src="https://cdn-icons-png.flaticon.com/512/167/167707.png" alt="Icono Escuela" class="school-img">
+                    <p class="edu-level">SECUNDARIA Y PREPARATORIA</p>
+                    <p class="institution">INSTITUTO CULTURAL CANADIENSE</p>
+                    <p>Ixtlahuaca de Rayón</p>
+                </div>
+            </section>
+        </main>
     </div>
 
 </body>
