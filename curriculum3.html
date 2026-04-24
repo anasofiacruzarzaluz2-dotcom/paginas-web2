@@ -5,52 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Sofia Arzaluz</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <style>
-        /* Estilos base */
-        body { font-family: 'Montserrat', sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; }
-        .cv-container { display: flex; max-width: 900px; margin: auto; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        /* Ajustes para asegurar visibilidad y tamaño */
+        .cv-container { display: flex; max-width: 900px; margin: auto; }
         
-        /* Sidebar */
-        .sidebar { width: 35%; background-color: #2c3e50; color: white; padding: 20px; }
-        
-        /* FOTO PEQUEÑA AJUSTADA */
-        .profile-img-container { text-align: center; margin-bottom: 20px; }
-        .profile-img { 
-            width: 100px; /* Tamaño reducido */
-            height: 100px; 
-            border-radius: 50%; 
-            object-fit: cover; 
-            border: 3px solid white;
-        }
-
-        .section-left h3 { border-bottom: 1px solid #7f8c8d; padding-bottom: 5px; font-size: 14px; }
-        .section-left ul { padding: 0; }
-        .section-left li { list-style: none; margin-bottom: 10px; font-size: 13px; display: flex; align-items: center; }
-
-        /* Iconos pequeños para Idiomas y Habilidades */
-        .icon { width: 20px; margin-right: 10px; text-align: center; }
-        .flag-icon { width: 20px; height: auto; border-radius: 2px; margin-right: 10px; }
-
-        /* Main Content */
-        .main-content { width: 65%; padding: 40px; }
-        header h1 { margin: 0; letter-spacing: 5px; }
-        .first-name { font-weight: 300; color: #34495e; }
-        .last-name { font-weight: 700; color: #2c3e50; }
-        .header-line { border: 0; border-top: 3px solid #2c3e50; width: 50px; margin: 15px 0; }
-
-        .section-title { font-size: 16px; color: #2c3e50; letter-spacing: 2px; margin-top: 30px; }
-        
-        /* LOGO COURSERA PEQUEÑO */
-        .coursera-logo {
-            width: 120px; /* Tamaño ajustado para logo */
+        /* FOTO DE PERFIL MÁS PEQUEÑA */
+        .profile-img {
+            width: 120px; /* Tamaño reducido */
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
             display: block;
-            margin-bottom: 10px;
+            margin: 0 auto;
         }
 
-        .school-img { width: 50px; float: right; }
-        .content-block { margin-bottom: 25px; }
-        .subtitle { font-weight: bold; font-size: 14px; margin-bottom: 5px; }
-        .course-list { padding-left: 15px; font-size: 13px; }
+        /* Banderas de idiomas */
+        .flag-icon {
+            width: 25px;
+            height: auto;
+            vertical-align: middle;
+            margin-right: 8px;
+            border: 1px solid #ddd;
+        }
+
+        /* Iconos de habilidades (reemplazan las imágenes grandes) */
+        .skill-icon {
+            font-size: 1.2em;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        /* Logo de Coursera ajustado */
+        .coursera-img {
+            width: 150px; /* Tamaño de logo, no de banner */
+            height: auto;
+            object-fit: contain;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        /* Logo de la escuela */
+        .school-img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            float: right;
+            margin-left: 15px;
+            background: white;
+            padding: 5px;
+            border-radius: 50%;
+        }
+
+        .content-block { overflow: hidden; margin-bottom: 20px; }
+        li { list-style: none; margin-bottom: 8px; display: flex; align-items: center; }
     </style>
 </head>
 <body>
@@ -62,8 +70,8 @@
             </div>
 
             <section class="section-left"> 
-                <h3>SOBRE MÍ</h3>
-                <p style="font-size: 12px; line-height: 1.6;">Me considero una persona responsable y comprometida en lo que me gusta...</p>
+                <h3>SOBRE MI</h3>
+                <p>Me considero una persona responsable y comprometida en lo que me gusta...</p>
             </section>
 
             <section class="section-left">
@@ -77,16 +85,16 @@
             <section class="section-left">
                 <h3>HABILIDADES</h3>
                 <ul>
-                    <li><span class="icon">👂</span> Escucha activa</li>
-                    <li><span class="icon">🧘</span> Manejo de emociones</li>
-                    <li><span class="icon">⚡</span> Control crítico</li>
-                    <li><span class="icon">🍃</span> Regulación de estrés</li>
+                    <li><span class="skill-icon">👂</span> Se escuchar a las personas</li>
+                    <li><span class="skill-icon">🧠</span> Manejo de emociones</li>
+                    <li><span class="skill-icon">⚠️</span> Control en momentos críticos</li>
+                    <li><span class="skill-icon">🧘</span> Regulación de estrés</li>
                 </ul>
             </section>
 
-            <section class="contact-info" style="font-size: 11px; margin-top: 40px; opacity: 0.8;">
-                <p>📞 (52) 7293205549</p>
-                <p>✉️ anasofiacruzarzaluz2@gmail.com</p>
+            <section class="contact-info">
+                <p class="label">Celular: (52) 7293205549</p>
+                <p class="label">E-mail: anasofiacruzarzaluz2@gmail.com</p>
             </section>
         </aside>
 
@@ -94,18 +102,18 @@
             <header>
                 <h1 class="first-name">SOFIA</h1>
                 <h1 class="last-name">ARZALUZ</h1>
-                <div class="header-line"></div>
+                <hr class="header-line">
             </header>
 
             <section class="right-section">
                 <h2 class="section-title">ACTUALIZACIONES</h2>
                 <div class="content-block">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Coursera-Logo_600x600.svg" alt="Coursera" class="coursera-logo">
-                    <p class="subtitle">CERTIFICACIONES PROFESIONALES</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Coursera-Logo_600x600.svg" alt="Coursera Logo" class="coursera-img">
+                    <p class="subtitle">CURSOS DE COURSERA</p>
                     <ul class="course-list">
-                        <li>Recursos Humanos</li>
-                        <li>Física Universitaria</li>
-                        <li>Negocios en América Latina</li>
+                        <li>* Recursos Humanos</li>
+                        <li>* Física Universitaria</li>
+                        <li>* Negocios en América Latina</li>
                     </ul>
                 </div>
             </section>
@@ -114,9 +122,9 @@
                 <h2 class="section-title">HISTORIAL ACADÉMICO</h2>
                 <div class="content-block">
                     <img src="https://cdn-icons-png.flaticon.com/512/167/167707.png" alt="Icono Escuela" class="school-img">
-                    <p class="subtitle">SECUNDARIA Y PREPARATORIA</p>
+                    <p class="edu-level">SECUNDARIA Y PREPARATORIA</p>
                     <p class="institution">INSTITUTO CULTURAL CANADIENSE</p>
-                    <p style="font-size: 13px; color: #666;">Ixtlahuaca de Rayón</p>
+                    <p>Ixtlahuaca de Rayón</p>
                 </div>
             </section>
         </main>
