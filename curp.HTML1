@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil de Ana Sofía</title>
+</head>
+<body>
+
+    <header>
+        <h1>Perfil Personal</h1>
+        <hr>
+    </header>
+
+    <section>
+        <h2>Información de Identidad</h2>
+        <ul>
+            <li><strong>Nombre completo:</strong> ANA SOFIA CRUZ ARZALUZ [cite: 10, 12]</li>
+            <li><strong>CURP:</strong> CUAA080626MMCRRNAO [cite: 4]</li>
+            <li><strong>Entidad de Registro:</strong> MEXICO [cite: 13]</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Detalles de la Constancia</h3>
+        <p>Este documento es una <strong>CURP Certificada</strong>, verificada directamente con el Registro Civil[cite: 16].</p>
+        <table>
+            <tr>
+                <td><strong>Fecha de emisión:</strong></td>
+                <td>12 de mayo de 2026 [cite: 17]</td>
+            </tr>
+            <tr>
+                <td><strong>Estatus del trámite:</strong></td>
+                <td>Gratuito [cite: 29]</td>
+            </tr>
+        </table>
+    </section>
+
+    <br>
+
+    <footer>
+        <blockquote cite="https://www.gob.mx/segob/renapo">
+            "Nuestro compromiso es que la identidad de cada persona esté protegida y segura." [cite: 22]
+        </blockquote>
+    </footer>
+
+</body>
+</html>
