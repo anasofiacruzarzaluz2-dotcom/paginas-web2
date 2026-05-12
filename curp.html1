@@ -21,16 +21,24 @@
     </section>
 
     <section>
-        <h3>Detalles de la Constancia</h3>
-        <p>Este documento es una <strong>CURP Certificada</strong>, verificada directamente con el Registro Civil[cite: 16].</p>
+        <h3>Imagen de la Constancia</h3>
+        <img src="CURP_CUAA080626MMCRRNA0.jpg" alt="Constancia de CURP de Ana Sofía" style="max-width: 100%; border: 1px solid #ccc;">
+        <p><em>Constancia emitida el 12 de mayo de 2026. [cite: 17]</em></p>
+    </section>
+
+    <br>
+
+    <section>
+        <h3>Detalles de Validación</h3>
+        <p>Esta es una <strong>CURP Certificada</strong> verificada con el Registro Civil. [cite: 16]</p>
         <table>
             <tr>
-                <td><strong>Fecha de emisión:</strong></td>
-                <td>12 de mayo de 2026 [cite: 17]</td>
+                <td><strong>Estatus:</strong></td>
+                <td>Trámite Gratuito [cite: 29]</td>
             </tr>
             <tr>
-                <td><strong>Estatus del trámite:</strong></td>
-                <td>Gratuito [cite: 29]</td>
+                <td><strong>Soporte:</strong></td>
+                <td>TELCURP 800 911 11 11 [cite: 27]</td>
             </tr>
         </table>
     </section>
@@ -39,7 +47,7 @@
 
     <footer>
         <blockquote cite="https://www.gob.mx/segob/renapo">
-            "Nuestro compromiso es que la identidad de cada persona esté protegida y segura." [cite: 22]
+            "El derecho a la identidad está consagrado en nuestra Constitución." [cite: 18]
         </blockquote>
     </footer>
 
